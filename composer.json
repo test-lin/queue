@@ -1,6 +1,8 @@
 {
-    "name": "Testlin/queue",
-    "description": "queue list",
+    "name": "test-lin/queue",
+    "description": "queue",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "jani",
