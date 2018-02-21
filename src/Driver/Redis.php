@@ -62,6 +62,15 @@ class Redis implements QueueInterface
         }
     }
 
+    public function getHash($id = null)
+    {
+        if ($id) {
+            return $this->redis->hGet($this->key_name.'hash', $id);
+        } else {
+            return $this->redis->hAll($this->key_name.'hash');
+        }
+    }
+
     public function status()
     {
         $info = array(

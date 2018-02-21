@@ -8,6 +8,8 @@ interface QueueInterface
 
     public function push($data, $id = null);
 
+    public function getHash($id);
+
     public function status();
 
     public function clear();
